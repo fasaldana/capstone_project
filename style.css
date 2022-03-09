@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+@font-face {
+  font-family: Lato, sans-serif;
+  src: url("fonts/Lato.ttf");
+}
+
+@font-face {
+  font-family: Cocogoose;
+  src: url("fonts/Cocogoose.otf");
+}
+
+body {
+  font-family: Lato, sans-serif;
+}
+
+hr {
+  background-color: #ec5245;
+  color: #ec5245;
+}
+
+/* Navbar */
+
+.navbarNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15%;
+  height: 50px;
+}
+
+.nav-list {
+  display: none;
+  gap: 40px;
+}
+
+.nav-list a {
+  font-size: 18px;
+  color: #272a31;
+}
+
+.nav-list a:hover {
+  color: #ec5245;
+}
+
+.line1,
+.line2,
+.line3 {
+  width: 20px;
+  border: black solid;
+}
+/* Navbar */
+
+/* home */
+
+.home-page {
+  background-color: #c0c0c0;
+  height: 70vh;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  margin-right: 5%;
+  gap: 20px;
+}
+
+.home-title {
+  color: #ec5245;
+  margin-top: 10vh;
+}
+
+.home-title h1 {
+  max-width: 90%;
+  font-size: 2rem;
+  font-family: Cocogoose, sans-serif;
+}
+
+.home-title h3 {
+  font-size: 4vh;
+}
+
+.home-page p {
+  align-self: center;
+  width: 85%;
+  border: #fff solid;
+}
+
+.home-date h2 {
+  font-family: Cocogoose, sans-serif;
+  font-size: 2rem;
+}
+
+.home-date h4 {
+  font-size: 1.2rem;
+}
+/* home */
+
+/* about section */
+
+.about-section {
+  background-image: url(assets/program-bg.jpg);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 5%;
+  color: #fff;
+}
+
+.about-title {
+  font-size: 1.4rem;
+}
+
+.about-btn {
+  background-color: #ec5245;
+  border: none;
+  color: #fff;
+  width: 80%;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px;
+  max-width: 270px;
+}
+
+.card-box {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.178);
+  align-items: center;
+  padding: 10px;
+  gap: 1rem;
+  margin: 2vw 0;
+}
+
+.card-box h4 {
+  font-family: Cocogoose, sans-serif;
+  color: #ec5245;
+  font-weight: bold;
+  font-size: 3vw;
+}
+
+.card-box p {
+  flex-basis: 70%;
+  font-size: 3vw;
+  color: #d3d3d3;
+}
+
+/* about section */
