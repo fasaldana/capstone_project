@@ -153,3 +153,85 @@ hr {
 }
 
 /* about section */
+
+@media only screen and (min-width: 768px) {
+  .navbarNav i {
+    display: none;
+  }
+
+  .navbarNav {
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+  }
+
+  .nav-list {
+    display: flex;
+  }
+
+  .home-title h1 {
+    max-width: 65%;
+    font-size: 5vw;
+    line-height: 5vw;
+  }
+
+  .home-title h3 {
+    margin-top: 10vw;
+    font-size: 3vw;
+    max-width: 65%;
+    padding-bottom: 3vw;
+  }
+
+  .home-page {
+    height: 110vh;
+  }
+
+  .home-container {
+    gap: 50px;
+    margin-left: 10%;
+  }
+
+  .home-container p {
+    font-size: 1.6vw;
+    max-width: 70%;
+    line-height: 2vw;
+    border: solid 1px #fff;
+    align-self: flex-start;
+    margin-left: 2vw;
+  }
+
+  .about-title {
+    font-size: 5vh;
+  }
+
+  .about-section {
+    justify-content: center;
+  }
+
+  .about-cards {
+    display: flex;
+    gap: 10px;
+  }
+
+  .card-box {
+    max-width: 200px;
+    margin-top: 6vh;
+    flex-direction: column;
+  }
+
+  .card-box h4 {
+    font-size: 1.7vw;
+  }
+
+  .card-box p {
+    font-size: 1.3vw;
+    text-align: center;
+  }
+
+  .about-btn {
+    background: none;
+    text-decoration: underline;
+    font-size: 25px;
+    cursor: pointer;
+  }
+}
