@@ -11,9 +11,9 @@
 - JavaScript
 - Bootrstrap
 
-## Live Demo (if available)
+## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://fasaldana.github.io/capstone_project/)
 
 
 ## Getting Started
