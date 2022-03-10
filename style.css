@@ -20,48 +20,49 @@ body {
   font-family: Lato, sans-serif;
 }
 
-hr {
-  background-color: #ec5245;
-  color: #ec5245;
+.divider {
+  border: #ec5245 solid 1px;
+  width: 40px;
+  align-self: center;
 }
 
 /* Navbar */
 
 .navbarNav {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 15%;
-  height: 50px;
 }
 
-.nav-list {
+.logo {
   display: none;
-  gap: 40px;
 }
 
-.nav-list a {
-  font-size: 18px;
-  color: #272a31;
+.nav-options {
+  display: none;
 }
 
-.nav-list a:hover {
-  color: #ec5245;
+.nav-options.activate {
+  display: flex;
 }
 
-.line1,
-.line2,
-.line3 {
-  width: 20px;
-  border: black solid;
+#bars-icon {
+  padding: 25px;
+  z-index: 100;
+  position: fixed;
+  color: #4b5154;
 }
+
 /* Navbar */
 
 /* home */
 
 .home-page {
+  height: 60vh;
+  background-repeat: no-repeat;
   background-color: #c0c0c0;
-  height: 70vh;
+}
+
+.home-img {
+  display: none;
 }
 
 .home-container {
@@ -154,19 +155,118 @@ hr {
 
 /* about section */
 
+/* Featured section */
+
+.featured-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.featured-section h3 {
+  color: #272a31;
+  font-size: 5vw;
+  align-self: center;
+}
+
+.featured-cards {
+  display: flex;
+  gap: 1vw;
+  flex-direction: column;
+  padding-left: 40px;
+}
+
+.featured-card-box {
+  margin-top: 30px;
+  display: flex;
+  gap: 2vw;
+  width: 90%;
+}
+
+.profile-picture {
+  padding: 15px;
+  background: url(assets/chess.png) no-repeat;
+  background-size: 60px 60px;
+}
+
+.profile-picture img {
+  width: 100px;
+  height: 100px;
+}
+
+.text-div {
+  border: solid 1px #d3d3d3;
+  width: 30px;
+}
+
+.comment {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment h3 {
+  font-weight: bold;
+  color: #272a31;
+  font-size: 4vw;
+  align-self: start;
+}
+
+.comment h4 {
+  color: #ec5245;
+  font-size: 3vw;
+}
+
+.comment p {
+  color: #272a31;
+  font-size: 3vw;
+  font-weight: bold;
+}
+
+.featured-card-box.hidden {
+  display: none;
+}
+
+.featured-card-box.visible {
+  display: flex;
+}
+
+/* Featured section */
+
 @media only screen and (min-width: 768px) {
-  .navbarNav i {
+  #bars-icon {
     display: none;
   }
 
   .navbarNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15%;
+    height: 50px;
     position: fixed;
     background-color: #fff;
     width: 100%;
   }
 
+  .nav-options {
+    display: block;
+  }
+
+  .logo {
+    display: block;
+  }
+
   .nav-list {
     display: flex;
+    gap: 40px;
+  }
+
+  .nav-list a {
+    font-size: 18px;
+    color: #272a31;
+  }
+
+  .nav-list a:hover {
+    color: #ec5245;
   }
 
   .home-title h1 {
@@ -184,6 +284,15 @@ hr {
 
   .home-page {
     height: 110vh;
+  }
+
+  .home-img {
+    opacity: 0.5;
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    filter: grayscale(100%);
   }
 
   .home-container {
@@ -234,4 +343,39 @@ hr {
     font-size: 25px;
     cursor: pointer;
   }
+
+  .card-box:hover {
+    border: solid #c0c0c0 1px;
+  }
+
+  .featured-section h3 {
+    font-size: 2vw;
+  }
+
+  .featured-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .comment h3 {
+    font-size: 2vw;
+  }
+
+  .comment h4 {
+    font-size: 2vw;
+  }
+
+  .comment p {
+    font-size: 2vw;
+  }
 }
+
+/* home page */
+
+/* about page */
+
+.about-home {
+  background-image: url(assets/main-mobile-bg.png);
+}
+
+/* about page */
