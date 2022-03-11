@@ -2,7 +2,6 @@
 const toggle = document.getElementsByClassName('check-btn')[0];
 const navLi = document.getElementsByClassName('nav-options')[0];
 const commentSec = document.getElementById('featured');
-const overlay = document.getElementById('overlay1');
 
 toggle.addEventListener('click', () => {
   navLi.classList.toggle('active');
@@ -51,7 +50,7 @@ const data = [
     img: 'gabriela.jpg',
     comment: 'What a great event, food was delicius, concert was so fun, and I came back home with a beautiful dog and a lovely cat. I will give my best forr giving them the life they deseerve.',
   },
-]
+];
 
 const testimonial = document.getElementById('feature');
 if (testimonial !== null) {
@@ -95,4 +94,3 @@ if (testimonial !== null) {
   });
   commentSec.append(btnMore);
 }
-
