@@ -42,4 +42,4 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Original design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07).
-- Inspiration and guideness from [Behnam](https://github.com/Behnam1369)
+- Inspiration and guideness from my mentor [Behnam](https://github.com/Behnam1369) and my coding partner [Teshome](https://github.com/TesheMaximillan)
