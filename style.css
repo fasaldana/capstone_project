@@ -126,6 +126,7 @@ body {
 .home-date h4 {
   font-size: 1.2rem;
 }
+
 /* home */
 
 /* about section */
@@ -293,18 +294,18 @@ body {
 
 /* sponsors */
 
-footer {
+.footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 5vh;
 }
 
-footer img {
+.footer img {
   width: 40%;
 }
 
-footer p {
+.footer p {
   font-weight: bold;
   font-size: 3.5vw;
   font-family: cocogoose, sans-serif;
@@ -466,15 +467,15 @@ footer p {
     gap: 5vw;
   }
 
-  footer {
+  .footer {
     justify-content: space-around;
   }
 
-  footer img {
+  .footer img {
     width: 20%;
   }
 
-  footer p {
+  .footer p {
     font-size: 2vw;
   }
 }
