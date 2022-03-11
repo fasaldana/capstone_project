@@ -18,8 +18,9 @@
 
 [Live Demo Link](https://fasaldana.github.io/capstone_project/)
 
-## Getting Started
-
+## Screenshots
+![Screenshot](https://user-images.githubusercontent.com/27364255/157982204-209175b5-4e96-470d-bf5e-7812b0bd5b11.png)
+![Screenshot](https://user-images.githubusercontent.com/27364255/157982037-bcf1166b-f9ce-40bf-9b20-35b8496127aa.png)
 ## Authors
 
 👤 **Fernando Saldaña**
@@ -41,4 +42,4 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Original design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07).
-- Inspiration and guideness from [Behnam](https://github.com/Behnam1369)
+- Inspiration and guideness from my mentor [Behnam](https://github.com/Behnam1369) and my coding partner [Teshome](https://github.com/TesheMaximillan)
