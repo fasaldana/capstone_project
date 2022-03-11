@@ -24,6 +24,7 @@ body {
   border: #ec5245 solid 1px;
   width: 40px;
   align-self: center;
+  margin-bottom: 10px;
 }
 
 /* Navbar */
@@ -38,9 +39,32 @@ body {
 
 .nav-options {
   display: none;
+  position: fixed;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffffd3;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(3px);
+  z-index: 1;
 }
 
-.nav-options.activate {
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4vw;
+}
+
+.nav-items a {
+  font-size: 5vw;
+  color: #272a31;
+  text-align: center;
+}
+
+.nav-options.active {
   display: flex;
 }
 
@@ -118,6 +142,9 @@ body {
 
 .about-title {
   font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about-btn {
@@ -132,7 +159,8 @@ body {
 }
 
 .card-box {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 2fr 6fr;
   background-color: rgba(255, 255, 255, 0.178);
   align-items: center;
   padding: 10px;
@@ -231,6 +259,57 @@ body {
 
 /* Featured section */
 
+/* sponsors */
+
+.sponsor-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #424242;
+}
+
+.sponsor-section h2 {
+  font-size: 5vw;
+  color: #fff;
+}
+
+.sponsor-section ul {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  gap: 20px;
+  padding-left: 0;
+  align-items: baseline;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+.sponsor-section ul li a img {
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+}
+
+/* sponsors */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5vh;
+}
+
+footer img {
+  width: 40%;
+}
+
+footer p {
+  font-weight: bold;
+  font-size: 3.5vw;
+  font-family: cocogoose;
+}
+
 @media only screen and (min-width: 768px) {
   #bars-icon {
     display: none;
@@ -247,17 +326,18 @@ body {
     width: 100%;
   }
 
-  .nav-options {
+  .logo {
     display: block;
   }
 
-  .logo {
-    display: block;
+  .logo img {
+    max-width: 133px;
   }
 
   .nav-list {
     display: flex;
     gap: 40px;
+    flex-direction: row;
   }
 
   .nav-list a {
@@ -267,6 +347,12 @@ body {
 
   .nav-list a:hover {
     color: #ec5245;
+  }
+
+  .nav-options {
+    display: flex;
+    position: relative;
+    align-items: flex-end;
   }
 
   .home-title h1 {
@@ -283,14 +369,16 @@ body {
   }
 
   .home-page {
-    height: 110vh;
+    height: 100vh;
+    background-color: transparent;
   }
 
   .home-img {
+    display: block;
     opacity: 0.5;
     width: 100%;
     position: absolute;
-    z-index: -2;
+    z-index: -1;
     top: 0;
     filter: grayscale(100%);
   }
@@ -325,6 +413,7 @@ body {
   .card-box {
     max-width: 200px;
     margin-top: 6vh;
+    display: flex;
     flex-direction: column;
   }
 
@@ -368,6 +457,26 @@ body {
   .comment p {
     font-size: 2vw;
   }
+
+  .sponsor-section h2 {
+    font-size: 3vw;
+  }
+
+  .sponsor-section ul {
+    gap: 5vw;
+  }
+
+  footer {
+    justify-content: space-around;
+  }
+
+  footer img {
+    width: 20%;
+  }
+
+  footer p {
+    font-size: 2vw;
+  }
 }
 
 /* home page */
@@ -375,7 +484,209 @@ body {
 /* about page */
 
 .about-home {
-  background-image: url(assets/main-mobile-bg.png);
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-home-img {
+  opacity: 0.3;
+  width: 100%;
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  filter: grayscale(100%);
+}
+
+.about-home h3 {
+  font-size: 4vw;
+  color: #ec5245;
+  padding-top: 15vw;
+}
+
+.about-home h1 {
+  font-size: 6vw;
+  color: #ec5245;
+  padding-top: 10px;
+  font-family: Cocogoose;
+  width: 80%;
+}
+
+.about-home p {
+  border: solid 1px #fff;
+  background-color: #fff;
+  width: 80%;
+  font-size: 3vw;
+  text-align: center;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.contact h4 {
+  font-size: 3vw;
+  text-align: center;
+}
+
+.contact a {
+  color: #272a31;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 4vw;
+}
+
+/* logo */
+
+.about-logo {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  height: 100%;
+  padding-bottom: 20px;
+}
+
+.about-logo h2 {
+  font-size: 5vw;
+  color: #272a31;
+}
+
+.about-logo p {
+  width: 70%;
+  text-align: center;
+  font-size: 3vw;
+}
+
+.about-logo img {
+  margin-top: 20px;
+  border: solid 1px #c0c0c0;
+  max-width: 90%;
+}
+
+.about-pastevents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 3vw;
+  align-items: center;
+}
+
+.about-pastevents h2 {
+  font-size: 5vw;
+  text-align: center;
+}
+
+.cards-about-past {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vw;
+  padding: 6vw;
+}
+
+.card-past {
+  position: relative;
+}
+
+.card-past img {
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ec5245;
+  opacity: 0.6;
+  top: 0;
+}
+
+.card-past h3 {
+  position: absolute;
+  font-family: cocogoose;
+  color: #fff;
+  font-size: 4vw;
+  text-align: center;
+  top: 30%;
+  width: 100%;
+}
+
+.card-past p {
+  position: absolute;
+  font-family: Lato, sans-serif;
+  color: #fff;
+  font-size: 5vw;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .about-home {
+    height: 125vh;
+  }
+
+  .about-home h3 {
+    font-size: 2vw;
+  }
+
+  .about-home h1 {
+    font-size: 5vw;
+    color: #ec5245;
+    padding-top: 10px;
+    font-family: Cocogoose;
+    width: 80%;
+  }
+
+  .about-home p {
+    border: solid 1px #fff;
+    background-color: #fff;
+    width: 80%;
+    font-size: 2vw;
+    text-align: center;
+  }
+
+  .contact h4 {
+    font-size: 2vw;
+  }
+
+  .contact a {
+    font-size: 2vw;
+  }
+
+  .about-logo h2 {
+    font-size: 3vw;
+  }
+
+  .about-logo p {
+    width: 70%;
+    text-align: center;
+    font-size: 2vw;
+  }
+
+  .about-pastevents h2 {
+    font-size: 3vw;
+  }
+
+  .cards-about-past {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card-past h3 {
+    font-size: 2vw;
+  }
+
+  .card-past p {
+    font-size: 3vw;
+  }
 }
 
 /* about page */

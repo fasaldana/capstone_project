@@ -6,25 +6,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d404a68fe3.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
     <title>About section</title>
 </head>
 
 <body>
     <header>
-        <nav></nav>
+        <a href="#" class="check-btn">
+            <i class="fa-solid fa-bars fa-2x" id="bars-icon" onclick="myFunction(this)"></i>
+        </a>
+        <nav class="navbarNav">
+            <a href="index.html" class="logo"><img src="assets/saldana-degisn.png" alt="logo"></a>
+            <div class="nav-options">
+                <ul class="nav-list">
+                    <li class="nav-items"><a href="about.html">About</a></li>
+                    <li class="nav-items"><a href="index.html#program">Program</a></li>
+                    <li class="nav-items"><a href="index.html#featured">Featured</a></li>
+                    <li class="nav-items"><a href="index.html#sponsor">Sponsor</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
     <section class="about-home">
-        <h1>CREATIVE COMMONS GLOBAL SUMMIT 2015</h1>
-        <div class="info">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi vitae fugit veritatis dolores pariatur
-                libero ducimus quae esse voluptatibus accusamus dolorem, repellendus eaque nostrum sequi in adipisci
-                quisquam accusantium recusandae?</p>
-        </div>
+        <img class="about-home-img" src="assets/dob_about_bg.jpg" alt="background image">
+        <h3>"Hello Everyone, Let's save animals"</h3>
+        <h1>SAVE ANIMALS COMMUNITY 2022</h1>
+        <p>Save Animals is a community that gathers every year on a large scale event to recolect founds for animal
+            shelters and save abandoned animals. If you want to participate please read the information below.</p>
         <div class="contact">
-            <p>Please contact us per Email for any further questions about CC Global Summit!</p>
+            <h4>Please contact us per Email for any further questions about our community!</h4>
             <a href="support@saveanimals.com">support@saveanimals.com</a>
         </div>
     </section>
+    <section class="about-logo">
+        <h2>SAVE ANIMALS LOGO</h2>
+        <div class="divider"></div>
+        <p>The logo of Save Animals was decided through by the community in order to conmemorate the founder memory</p>
+        <img src="assets/saldana-degisn.png" alt="Logo">
+    </section>
+    <section class="about-pastevents">
+        <h2>See the past 2 years events</h2>
+        <div class="divider"></div>
+        <div class="cards-about-past">
+            <div class="card-past">
+                <img src="assets/fundraising.jpg" alt="past event 2020">
+                <div class="overlay"></div>
+                <h3>2020</h3>
+                <p>Fundraising event in Italy</p>
+            </div>
+            <div class="card-past">
+                <img src="assets/dogCare.jpg" alt="past event 2020">
+                <div class="overlay"></div>
+                <h3>2021</h3>
+                <p>Dog's vaccination event in Spain</p>
+            </div>
+        </div>
+    </section>
+    <section class="sponsor-section" id="sponsor">
+        <h2>Sponsors</h2>
+        <div class="divider"></div>
+        <ul>
+            <li><a href="#"><img src="assets/sponsor1.png" alt="sponsor1"></a></li>
+            <li><a href="#"><img src="assets/sponsor2.png" alt="sponsor1"></a></li>
+            <li><a href="#"><img src="assets/pedigree-logo-black-and-white.png" alt="sponsor1"></a></li>
+            <li><a href="#"><img src="assets/pawsvet.png" alt="sponsor1"></a></li>
+            <li><a href="#"><img src="assets/veterinary-clinic-logo.png" alt="sponsor1"></a></li>
+        </ul>
+    </section>
+    <footer class="footer">
+        <img src="assets/saldana-degisn.png" alt="Logo">
+        <p>Ⓒ All Rights Reserved</p>
+    </footer>
 </body>
 
 </html>
