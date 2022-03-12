@@ -219,6 +219,10 @@
   .footer {
     background-color: #272a31;
   }
+
+  .footer p {
+    color: #fff;
+  }
 }
 
 /* about page */

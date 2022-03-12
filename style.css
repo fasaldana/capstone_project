@@ -451,10 +451,15 @@ body {
     text-decoration: underline;
     font-size: 25px;
     cursor: pointer;
+    max-width: 80%;
   }
 
   .card-box:hover {
     border: solid #c0c0c0 1px;
+  }
+
+  .featured-section {
+    margin-top: 2vw;
   }
 
   .featured-section h3 {
@@ -464,6 +469,7 @@ body {
   .featured-cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-top: 20px;
   }
 
   .comment h3 {
@@ -472,6 +478,7 @@ body {
 
   .comment h4 {
     font-size: 2vw;
+    font-style: italic;
   }
 
   .comment p {
