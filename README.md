@@ -2,45 +2,28 @@
 
 # Capstone Project
 
-> Description the project.
+> This project is about an event for raising fundings for protecting and defending animals that are abandoned or don't have a home. Also looking at some effects last year's events left on people.
+
+## Disclaimer
+
+> This project is not a real event and should be take only as a practice test, the content shouldn't be taken seriously nor be distributed as a fake announcement.
 
 ## Built With
 
 - HTML
 - CSS
 - JavaScript
-- Bootrstrap
 
 ## Live Demo
 
 [Live Demo Link](https://fasaldana.github.io/capstone_project/)
 
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
-
+## Screenshots
+![Screenshot](https://user-images.githubusercontent.com/27364255/157982204-209175b5-4e96-470d-bf5e-7812b0bd5b11.png)
+![Screenshot](https://user-images.githubusercontent.com/27364255/157982037-bcf1166b-f9ce-40bf-9b20-35b8496127aa.png)
 ## Authors
 
-👤 **Author1**
+👤 **Fernando Saldaña**
 
 - GitHub: [@fasaldana](https://github.com/fasaldana)
 - Twitter: [@Fernandosal98](https://twitter.com/Fernandosal98)
@@ -59,3 +42,4 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Original design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07).
+- Inspiration and guideness from my mentor [Behnam](https://github.com/Behnam1369) and my coding partner [Teshome](https://github.com/TesheMaximillan)
