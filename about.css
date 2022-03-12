@@ -9,7 +9,7 @@
 
 .about-home-img {
   opacity: 0.3;
-  width: 100%;
+  max-width: 100%;
   position: absolute;
   z-index: -2;
   top: 0;
@@ -150,6 +150,13 @@
     height: 125vh;
   }
 
+  .about-home-img {
+    margin: -50% auto;
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+  }
+
   .about-home h3 {
     font-size: 2vw;
   }
@@ -203,6 +210,14 @@
 
   .card-past p {
     font-size: 3vw;
+  }
+
+  .sponsor-section {
+    display: none;
+  }
+
+  .footer {
+    background-color: #272a31;
   }
 }
 
