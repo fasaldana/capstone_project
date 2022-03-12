@@ -29,8 +29,25 @@ body {
 
 /* Navbar */
 
+.social-media {
+  background-color: #272a31;
+}
+
+.social-media ul {
+  display: none;
+  color: #fff;
+  gap: 20px;
+  justify-content: flex-end;
+  margin-right: 10%;
+}
+
+.social-media ul a {
+  color: #fff;
+}
+
 .navbarNav {
   display: flex;
+  height: 50px;
 }
 
 .logo {
@@ -316,12 +333,16 @@ body {
     display: none;
   }
 
+  .social-media ul {
+    display: flex;
+  }
+
   .navbarNav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 15%;
-    height: 50px;
+    height: 60px;
     position: fixed;
     background-color: #fff;
     width: 100%;
