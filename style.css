@@ -41,6 +41,12 @@ body {
   margin-right: 10%;
 }
 
+.nav-items a {
+  font-size: 5vw;
+  color: #272a31;
+  text-align: center;
+}
+
 .social-media ul a {
   color: #fff;
 }
@@ -75,10 +81,18 @@ body {
   gap: 4vw;
 }
 
-.nav-items a {
-  font-size: 5vw;
-  color: #272a31;
+.nav-items-bordered {
+  display: flex;
+  border: solid 2px #ec5245;
   text-align: center;
+  margin-left: 5vw;
+  align-items: center;
+  justify-content: center;
+  color: #ec5245;
+  font-family: cocogoose, sans-serif;
+  width: 130px;
+  height: 70px;
+  margin-top: 3vw;
 }
 
 .nav-options.active {
@@ -363,16 +377,10 @@ body {
   }
 
   .nav-items-bordered {
-    display: flex;
-    border: solid 2px #ec5245;
     width: 150px;
     height: 100%;
-    text-align: center;
     margin-left: 5vw;
-    align-items: center;
-    justify-content: center;
-    color: #ec5245;
-    font-family: cocogoose, sans-serif;
+    margin-top: 0;
   }
 
   .nav-items-bordered:hover {
